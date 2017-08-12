@@ -124,8 +124,14 @@ console.assert(max(0,0)===0);
 // Write a function called `maxOfThree` that returns the largest of three
 // numbers
 // write your code here:
-
+function maxOfThree(a,b,c) {
+  return Math.max(a,b,c);
+}
 // write your console.log/asserts here:
+console.log(`Max of 1, 2, 3 is ${maxOfThree(1,2,3)}`);
+console.assert(maxOfThree(1,2,3)===3);
+console.assert(maxOfThree(11,23,101)===101);
+console.assert(maxOfThree(-34,0,89)===89);
 
 
 // ---------------------
