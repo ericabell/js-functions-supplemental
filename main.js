@@ -21,7 +21,9 @@ var instructors = [
 // Write a function called `sum` that takes two parameters and returns the sum
 // of those 2 numbers.
 // write your code here:
-
+function sum(a,b) {
+  return a+b;
+}
 
 // write your console.log/asserts here:
 // i've already written some console.logs and console.asserts for you.
