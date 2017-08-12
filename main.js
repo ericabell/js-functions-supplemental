@@ -138,9 +138,18 @@ console.assert(maxOfThree(-34,0,89)===89);
 // Write a function called `isVowel` that receives a single character as a
 // parameter and returns true if it is a vowel, false otherwise.
 // write your code here:
+function isVowel(char) {
+  return (['a','e','i','o','u'].indexOf(char)>-1);
+}
 
 // write your console.log/asserts here:
-
+console.log(`a is a vowel: ${isVowel('a')}`);
+console.assert(isVowel('a')===true);
+console.assert(isVowel('e')===true);
+console.assert(isVowel('i')===true);
+console.assert(isVowel('o')===true);
+console.assert(isVowel('u')===true);
+console.assert(isVowel('f')===false);
 
 // ---------------------
 // Write a function called `translate` that will translate a text into
