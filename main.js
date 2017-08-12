@@ -52,9 +52,15 @@ console.assert(avg(1,0,0), 1/3);
 // Write a function called `getLength` that takes one parameter (a string) and
 // returns the number of characters in that string
 // write your code here:
+function getLength(aString) {
+  return aString.length;
+}
 
 // write your console.log/asserts here:
-
+console.log('The length of "was" is: ', getLength('was'));
+console.assert(getLength('help me'), 7);
+console.assert(getLength('I like to write code'), 20);
+console.assert(getLength('I can count !@#$%^&*()'), 22);
 
 // -------------------
 // Write a function called `greaterThan` that takes two parameters and
