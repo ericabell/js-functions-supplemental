@@ -43,10 +43,10 @@ function avg(a,b,c) {
 
 // write your console.log/asserts here:
 console.log('average of 1, 2, and 3 is ', avg(1,2,3));
-console.assert(avg(1,2,3)==2);
-console.assert(avg(1,1,1)==1);
-console.assert(avg(4,4,1)==3);
-console.assert(avg(1,0,0)==1/3);
+console.assert(avg(1,2,3)===2);
+console.assert(avg(1,1,1)===1);
+console.assert(avg(4,4,1)===3);
+console.assert(avg(1,0,0)===1/3);
 
 // -------------------
 // Write a function called `getLength` that takes one parameter (a string) and
@@ -58,9 +58,9 @@ function getLength(aString) {
 
 // write your console.log/asserts here:
 console.log('The length of "was" is: ', getLength('was'));
-console.assert(getLength('help me')==7);
-console.assert(getLength('I like to write code')==20);
-console.assert(getLength('I can count !@#$%^&*()')==22);
+console.assert(getLength('help me')===7);
+console.assert(getLength('I like to write code')===20);
+console.assert(getLength('I can count !@#$%^&*()')===22);
 
 // -------------------
 // Write a function called `greaterThan` that takes two parameters and
@@ -73,9 +73,9 @@ function greaterThan(a,b) {
 
 // write your console.log/asserts here:
 console.log('8 is greater than 9: ' + greaterThan(8,9));
-console.assert(greaterThan(2,1)==false);
-// console.assert(greaterThan(4,4), false);
-// console.assert(greaterThan(100,101), true);
+console.assert(greaterThan(2,1)===false);
+console.assert(greaterThan(4,4)===false);
+console.assert(greaterThan(100,101)===true);
 
 // -------------------
 // Write a function called `greet` that takes a single parameter and returns a
