@@ -82,8 +82,15 @@ console.assert(greaterThan(100,101)===true);
 // string that is formatted like "Hello, Name!" where *Name* is the parameter
 // that was passed in.
 // write your code here:
-
+function greet(name) {
+  return `Hello, ${name}!`;
+}
 // write your console.log/asserts here:
+console.log(`Message printed: ${greet('Bob')}`);
+console.assert(greet('Bob') === 'Hello, Bob!');
+console.assert(greet('Mike') === 'Hello, Mike!');
+console.assert(greet('Sally') === 'Hello, Sally!');
+console.assert(greet('') === 'Hello, !');
 
 
 // -------------------
