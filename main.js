@@ -98,8 +98,14 @@ console.assert(greet('') === 'Hello, !');
 // The function should insert the words into a pre-defined sentence. Finally the
 // function should return that sentence.
 // write your code here:
-
+function madlib(w1,w2,w3,w4) {
+  return `The ${w1} ate my ${w2} with ${w3} great ${w4}.`
+}
 // write your console.log/asserts here:
+console.log(madlib('fox', 'homework', 'the', 'panda'));
+console.assert(madlib('fox', 'homework', 'the', 'panda')==='The fox ate my homework with the great panda.');
+console.assert(madlib('chicken', 'notebook', 'a', 'mustang')==='The chicken ate my notebook with a great mustang.');
+console.assert(madlib('dog', 'desk', 'it', 'kitten')==='The dog ate my desk with it great kitten.');
 
 
 // -------------------
