@@ -111,9 +111,14 @@ console.assert(madlib('dog', 'desk', 'it', 'kitten')==='The dog ate my desk with
 // -------------------
 // Write a function called `max` that returns the larger of two numbers
 // write your code here:
-
+function max(a,b) {
+  return Math.max(a,b);
+}
 // write your console.log/asserts here:
-
+console.log(`Max of 2 and 3 is ${max(2,3)}`);
+console.assert(max(2,3)===3);
+console.assert(max(-3,3)===3);
+console.assert(max(0,0)===0);
 
 // -------------------
 // Write a function called `maxOfThree` that returns the largest of three
