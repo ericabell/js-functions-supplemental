@@ -37,9 +37,16 @@ console.assert(sum(-48,5), 43);
 // Write a function named `avg` that takes 3 parameters and returns the average
 // of those 3 numbers.
 // write your code here:
+function avg(a,b,c) {
+  return (a+b+c)/3;
+}
 
 // write your console.log/asserts here:
-
+console.log('average of 1, 2, and 3 is ', avg(1,2,3));
+console.assert(avg(1,2,3), 2);
+console.assert(avg(1,1,1), 1);
+console.assert(avg(4,4,1), 3);
+console.assert(avg(1,0,0), 1/3);
 
 // -------------------
 // Write a function called `getLength` that takes one parameter (a string) and
