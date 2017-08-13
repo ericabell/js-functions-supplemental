@@ -159,11 +159,16 @@ console.assert(isVowel('f')===false);
 // write your code here:
 function translate(aString) {
   let vowels = ['a','e','i','o','u'];
-  let translatedString = '';
 
-  // TODO: finish this function
+  return aString.split('').map( (char) => {
+    // if char is a space or a vowel, just return it
+    if( char === ' ' || vowels.indexOf(char) >= 0 ) {
+      return char;
+    } else { // otherwise, return the consonant doubled with 'o' in between.
+      return char + 'o' + char;
+    }
+  }).join('');
 
-  return translatedString;
 }
 
 // write your console.log/asserts here:
