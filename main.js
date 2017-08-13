@@ -285,6 +285,7 @@ function contains(aString, arr) {
 console.log(`strings that contain 'is': ${contains('is', strings)}`);
 console.assert(contains('abcd', ['abcdef', 'dkriabcdjkshdu', 'judiso'])===["abcdef", "dkriabcdjkshdu"]);
 
+// TODO: Implement comparison of two arrays for equality?
 
 // ---------------------
 // Write a function called `teachersOf` that takes a subject returns only the
