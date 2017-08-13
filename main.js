@@ -161,6 +161,8 @@ function translate(aString) {
   let vowels = ['a','e','i','o','u'];
   let translatedString = '';
 
+  // TODO: finish this function
+
   return translatedString;
 }
 
@@ -272,17 +274,33 @@ console.log(`strings that contain 'is': ${containsIs(strings)}`);
 // strings and returns a new array with only the strings which contain the
 // substring specified string
 // write your code here:
-
+function contains(aString, arr) {
+  return arr.filter((e) => {
+    if(e.indexOf(aString) >= 0) {
+      return true;
+    }
+  })
+}
 // write your console.log/asserts here:
+console.log(`strings that contain 'is': ${contains('is', strings)}`);
+console.assert(contains('abcd', ['abcdef', 'dkriabcdjkshdu', 'judiso'])===["abcdef", "dkriabcdjkshdu"]);
 
 
 // ---------------------
 // Write a function called `teachersOf` that takes a subject returns only the
 // teachers who teach the specified subject.
 // write your code here:
-
+function teachersOf(subject, teachers) {
+  return teachers.filter((teacher) => {
+    console.log(teacher);
+    if(teacher.teaches === subject) {
+      return true;
+    }
+    return false;
+  })
+}
 // write your console.log/asserts here:
-
+console.log(`Instructors of Javascript: ${teachersOf('JavaScript', instructors)}`);
 
 // ---------------------
 // Write a function called `objectMatches` that takes 2 strings and an array of
@@ -292,6 +310,14 @@ console.log(`strings that contain 'is': ${containsIs(strings)}`);
 // search. The function should return a new array of objects that have the
 // specified value in the specified key.
 // write your code here:
+function objectMatches(subject, key, objs) {
+  return objs.filter((obj) => {
+    if(obj[key] === subject) {
+      return true;
+    }
+    return false;
+  })
+}
 
 // write your console.log/asserts here:
 console.log('the objects that match javascript teachers are', objectMatches('JavaScript', 'teaches', instructors))
