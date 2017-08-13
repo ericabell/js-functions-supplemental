@@ -367,6 +367,12 @@ try {
   console.log(e);
 }
 
+try {
+  console.log(`12-25-2000 is ${getAge('12-25-2000')} years ago.`);
+} catch (e) {
+  console.log(e);
+}
+
 // ---------------------
 // Write a function called `isValidPassword` that takes a string password. If
 // the password meets the following criteria return true. otherwise return
@@ -376,5 +382,26 @@ try {
     // contains at least one of the following: . , ! $ &
     // contains at least one capital letter and one lowercase letter
 // write your code here:
-
+function isValidPassword(aString) {
+  let c1 = new RegExp('\\S{8,}');
+  let c2 = new RegExp('\\d{1,}');
+  let c3 = new RegExp('[.,!$&]{1}');
+  let c4 = new RegExp('[A-Z]{1}');
+  let c5 = new RegExp('[a-z]{1}');
+  if( c1.test(aString)
+      && c2.test(aString)
+      && c3.test(aString)
+      && c4.test(aString)
+      && c5.test(aString) ) {
+    // valid password
+    return true;
+  }
+  return false;
+}
 // write your console.log/asserts here:
+console.log(`Is 'hello$A1' a valid password: ${isValidPassword('hello$A1')}`);
+console.log(`Is 'hello$A1' a valid password: ${isValidPassword('hello$A')}`);
+console.log(`Is '1234567890' a valid password: ${isValidPassword('1234567890')}`);
+console.log(`Is 'Hh12345678' a valid password: ${isValidPassword('Hh12345678')}`);
+console.log(`Is 'hello$a1' a valid password: ${isValidPassword('hello$a1')}`);
+console.log(`Is 'Aabcdefg$' a valid password: ${isValidPassword('Aabcdefg$')}`);
