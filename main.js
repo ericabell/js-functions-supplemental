@@ -28,6 +28,7 @@ function sum(a,b) {
 // write your console.log/asserts here:
 // i've already written some console.logs and console.asserts for you.
 // follow this pattern as you work on the rest of these problems.
+console.log('****  (1) sum ****');
 console.log('sum of 2 and 3 is ', sum(2,3));
 console.assert(sum(2,3)===5);
 console.assert(sum(1,0)===1);
@@ -42,6 +43,7 @@ function avg(a,b,c) {
 }
 
 // write your console.log/asserts here:
+console.log('****  (2) avg ****');
 console.log('average of 1, 2, and 3 is ', avg(1,2,3));
 console.assert(avg(1,2,3)===2);
 console.assert(avg(1,1,1)===1);
@@ -57,6 +59,7 @@ function getLength(aString) {
 }
 
 // write your console.log/asserts here:
+console.log('****  (3) getLength ****');
 console.log('The length of "was" is: ', getLength('was'));
 console.assert(getLength('help me')===7);
 console.assert(getLength('I like to write code')===20);
@@ -72,6 +75,7 @@ function greaterThan(a,b) {
 }
 
 // write your console.log/asserts here:
+console.log('****  (4) greaterThan ****');
 console.log('8 is greater than 9: ' + greaterThan(8,9));
 console.assert(greaterThan(2,1)===false);
 console.assert(greaterThan(4,4)===false);
@@ -86,6 +90,7 @@ function greet(name) {
   return `Hello, ${name}!`;
 }
 // write your console.log/asserts here:
+console.log('****  (5) greet ****');
 console.log(`Message printed: ${greet('Bob')}`);
 console.assert(greet('Bob') === 'Hello, Bob!');
 console.assert(greet('Mike') === 'Hello, Mike!');
@@ -102,6 +107,7 @@ function madlib(w1,w2,w3,w4) {
   return `The ${w1} ate my ${w2} with ${w3} great ${w4}.`
 }
 // write your console.log/asserts here:
+console.log('****  (6) madlib ****');
 console.log(madlib('fox', 'homework', 'the', 'panda'));
 console.assert(madlib('fox', 'homework', 'the', 'panda')==='The fox ate my homework with the great panda.');
 console.assert(madlib('chicken', 'notebook', 'a', 'mustang')==='The chicken ate my notebook with a great mustang.');
@@ -115,6 +121,7 @@ function max(a,b) {
   return Math.max(a,b);
 }
 // write your console.log/asserts here:
+console.log('****  (7) max ****');
 console.log(`Max of 2 and 3 is ${max(2,3)}`);
 console.assert(max(2,3)===3);
 console.assert(max(-3,3)===3);
@@ -128,6 +135,7 @@ function maxOfThree(a,b,c) {
   return Math.max(a,b,c);
 }
 // write your console.log/asserts here:
+console.log('****  (8) maxOfThree ****');
 console.log(`Max of 1, 2, 3 is ${maxOfThree(1,2,3)}`);
 console.assert(maxOfThree(1,2,3)===3);
 console.assert(maxOfThree(11,23,101)===101);
@@ -143,6 +151,7 @@ function isVowel(char) {
 }
 
 // write your console.log/asserts here:
+console.log('****  (9) isVowel ****');
 console.log(`a is a vowel: ${isVowel('a')}`);
 console.assert(isVowel('a')===true);
 console.assert(isVowel('e')===true);
@@ -172,6 +181,7 @@ function translate(aString) {
 }
 
 // write your console.log/asserts here:
+console.log('****  (10) translate ****');
 console.log(`this is fun translated is ${translate('this is fun')}`);
 
 // ---------------------
@@ -187,6 +197,7 @@ function reverse(aString) {
   return reversedString;
 }
 // write your console.log/asserts here:
+console.log('****  (11) reverse ****');
 console.log(`jag testar reversed is ${reverse('jag testar')}`);
 
 // ---------------------
@@ -198,6 +209,7 @@ function largest(arr) {
 }
 
 // write your console.log/asserts here:
+console.log('****  (12) largest ****');
 console.log('the largest number in the `numbers` array is ', largest(numbers));
 console.assert(largest(numbers)===101);
 console.assert(largest([-1,20,100,99])===100);
@@ -217,6 +229,7 @@ function longest(arr) {
   return maxLength;
 }
 // write your console.log/asserts here:
+console.log('****  (13) longest ****');
 console.log(`longest of ['one', 'two', 'three'] is ${longest(['one', 'two', 'three'])}`);
 console.assert(longest(['one', 'two', 'three']) === 'three');
 console.assert(longest(strings) === 'collection');
@@ -235,6 +248,7 @@ function getEvens(arr) {
 }
 
 // write your console.log/asserts here:
+console.log('****  (14) getEvens ****');
 console.log(`Evens of numbers is: ${getEvens(numbers)}`);
 
 // ---------------------
@@ -251,6 +265,7 @@ function getOdds(arr) {
 }
 
 // write your console.log/asserts here:
+console.log('****  (15) getOdds ****');
 console.log(`Odds of numbers is: ${getOdds(numbers)}`);
 
 // ---------------------
@@ -267,6 +282,7 @@ function containsIs(arr) {
 }
 
 // write your console.log/asserts here:
+console.log('****  (16) containsIs ****');
 console.log(`strings that contain 'is': ${containsIs(strings)}`);
 
 
@@ -287,6 +303,8 @@ function contains(aString, arr) {
   })
 }
 // write your console.log/asserts here:
+console.log('****  ADVENTURER ****');
+console.log('****  (17) contains ****');
 console.log(`strings that contains 'is': ${contains('is', strings)}`);
 console.assert(compareArrays( contains('abcd', ['abcdef', 'dkriabcdjkshdu', 'judiso']) , ["abcdef", "dkriabcdjkshdu"]));
 
@@ -324,6 +342,7 @@ function teachersOf(subject, teachers) {
   })
 }
 // write your console.log/asserts here:
+console.log('****  (18) teachersOf ****');
 console.log(`Instructors of Javascript: ${teachersOf('JavaScript', instructors)}`);
 
 // ---------------------
@@ -344,6 +363,7 @@ function objectMatches(subject, key, objs) {
 }
 
 // write your console.log/asserts here:
+console.log('****  (19) objectMatches ****');
 console.log('the objects that match javascript teachers are', objectMatches('JavaScript', 'teaches', instructors))
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -385,6 +405,8 @@ function getAge(aString) {
 
 
 // write your console.log/asserts here:
+console.log('****  EPIC ****');
+console.log('****  (20) getAge ****');
 try {
   console.log(`${getAge('12-25-2020')}`);
 } catch (e) {
@@ -423,6 +445,7 @@ function isValidPassword(aString) {
   return false;
 }
 // write your console.log/asserts here:
+console.log('****  (21) isValidPassword ****');
 console.log(`Is 'hello$A1' a valid password: ${isValidPassword('hello$A1')}`);
 console.log(`Is 'hello$A1' a valid password: ${isValidPassword('hello$A')}`);
 console.log(`Is '1234567890' a valid password: ${isValidPassword('1234567890')}`);
