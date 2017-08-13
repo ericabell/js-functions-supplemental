@@ -287,10 +287,28 @@ function contains(aString, arr) {
   })
 }
 // write your console.log/asserts here:
-console.log(`strings that contain 'is': ${contains('is', strings)}`);
-console.assert(contains('abcd', ['abcdef', 'dkriabcdjkshdu', 'judiso'])===["abcdef", "dkriabcdjkshdu"]);
+console.log(`strings that contains 'is': ${contains('is', strings)}`);
+console.assert(compareArrays( contains('abcd', ['abcdef', 'dkriabcdjkshdu', 'judiso']) , ["abcdef", "dkriabcdjkshdu"]));
 
-// TODO: Implement comparison of two arrays for equality?
+// Implement comparison of two arrays for equality?
+function compareArrays(arr1, arr2) {
+  // check that their lengths are the same, that's quick to do
+  if( arr1.length != arr2.length ) {
+    return false;
+  }
+  // sort the arrays in place
+  arr1.sort();
+  arr2.sort();
+
+  // go element by element and make sure the strings match.
+  for( let i=0; i< arr1.length; i++ ) {
+    if( arr1[i] != arr2[i] ) {
+      return false;
+    }
+  }
+  return true;
+}
+
 
 // ---------------------
 // Write a function called `teachersOf` that takes a subject returns only the
