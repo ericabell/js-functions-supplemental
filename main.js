@@ -334,9 +334,38 @@ console.log('the objects that match javascript teachers are', objectMatches('Jav
 // throw an error in the console that describes what the user did wrong when
 // calling the function.
 // write your code here:
+function getAge(aString) {
+  let patt1 = new RegExp('\\d{1,2}-\\d{1,2}-\\d{4}');
+  let patt2 = new RegExp('\\d{1,2}/\\d{1,2}/\\d{4}');
+
+  // check that the input in valid format
+  if( patt1.test(aString) || patt2.test(aString) ) {
+    // we have a valid pattern
+    let today = new Date();
+    let testDate = new Date(aString);
+    // test to make sure the date isn't after today's date
+    if( testDate > today ) {
+      throw 'Date is in the future!';
+    } else {
+      // compute the difference in years
+      let ageDiff = today - testDate.getTime();
+      let ageDate = new Date(ageDiff);
+      return Math.abs(ageDate.getUTCFullYear() - 1970);
+    }
+  }
+  else {
+    // we don't have a valid pattern, throw an error
+    throw 'Invalid date format!';
+  }
+}
+
 
 // write your console.log/asserts here:
-
+try {
+  console.log(`${getAge('12-25-2020')}`);
+} catch (e) {
+  console.log(e);
+}
 
 // ---------------------
 // Write a function called `isValidPassword` that takes a string password. If
