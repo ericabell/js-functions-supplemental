@@ -157,17 +157,30 @@ console.assert(isVowel('f')===false);
 // "o" in between. For example, translate("this is fun") should return the
 // string "tothohisos isos fofunon".
 // write your code here:
+function translate(aString) {
+  let vowels = ['a','e','i','o','u'];
+  let translatedString = '';
+
+  return translatedString;
+}
 
 // write your console.log/asserts here:
-
+console.log(`this is fun translated is ${translate('this is fun')}`);
 
 // ---------------------
 // Write a function called `reverse` that computes the reversal of a string.
 // For example, reverse("jag testar") should return the string "ratset gaj".
 // write your code here:
-
+function reverse(aString) {
+  aString = aString.split('');
+  reversedString = '';
+  while( aString.length > 0 ) {
+    reversedString += aString.pop();
+  }
+  return reversedString;
+}
 // write your console.log/asserts here:
-
+console.log(`jag testar reversed is ${reverse('jag testar')}`);
 
 // ---------------------
 // Write a function called `largest` that takes an array of numbers and returns
