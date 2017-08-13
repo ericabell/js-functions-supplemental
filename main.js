@@ -200,9 +200,19 @@ console.assert(largest([81,82,93,100])===100);
 // Write a function called `longest` that takes an array of strings and returns
 // the longest string in the array.
 // write your code here:
-
+function longest(arr) {
+  let maxLength = '';
+  arr.forEach( (string) => {
+    if( string.length > maxLength.length ) {
+      maxLength = string;
+    }
+  });
+  return maxLength;
+}
 // write your console.log/asserts here:
-
+console.log(`longest of ['one', 'two', 'three'] is ${longest(['one', 'two', 'three'])}`);
+console.assert(longest(['one', 'two', 'three']) === 'three');
+console.assert(longest(strings) === 'collection');
 
 // ---------------------
 // Write a function called `getEvens` that takes an array of numbers and returns
