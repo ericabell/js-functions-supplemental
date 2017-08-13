@@ -218,17 +218,33 @@ console.assert(longest(strings) === 'collection');
 // Write a function called `getEvens` that takes an array of numbers and returns
 // a new array with only the even numbers from the original array
 // write your code here:
+function getEvens(arr) {
+  return arr.filter((e)=> {
+    if(e%2 === 0) {
+      return true;
+    }
+    return false;
+  })
+}
 
 // write your console.log/asserts here:
-
+console.log(`Evens of numbers is: ${getEvens(numbers)}`);
 
 // ---------------------
 // Write a function called `getOdds` that takes an array of numbers and returns
 // a new array with only the odd numbers from the original array
 // write your code here:
+function getOdds(arr) {
+  return arr.filter((e)=> {
+    if(e%2 != 0) {
+      return true;
+    }
+    return false;
+  })
+}
 
 // write your console.log/asserts here:
-
+console.log(`Odds of numbers is: ${getOdds(numbers)}`);
 
 // ---------------------
 // Write a function called `containsIs` that takes an array of strings and
