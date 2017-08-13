@@ -186,10 +186,15 @@ console.log(`jag testar reversed is ${reverse('jag testar')}`);
 // Write a function called `largest` that takes an array of numbers and returns
 // the largest number in the array.
 // write your code here:
+function largest(arr) {
+  return Math.max.apply(null, arr);
+}
 
 // write your console.log/asserts here:
 console.log('the largest number in the `numbers` array is ', largest(numbers));
-console.assert(largest(numbers), 101);
+console.assert(largest(numbers)===101);
+console.assert(largest([-1,20,100,99])===100);
+console.assert(largest([81,82,93,100])===100);
 
 // ---------------------
 // Write a function called `longest` that takes an array of strings and returns
