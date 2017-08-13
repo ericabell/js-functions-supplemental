@@ -250,8 +250,17 @@ console.log(`Odds of numbers is: ${getOdds(numbers)}`);
 // Write a function called `containsIs` that takes an array of strings and
 // returns a new array with only the strings which contain the substring `is`
 // write your code here:
+function containsIs(arr) {
+  return arr.filter((e) => {
+    if(e.indexOf('is') >= 0) {
+      return true;
+    }
+    return false;
+  });
+}
 
 // write your console.log/asserts here:
+console.log(`strings that contain 'is': ${containsIs(strings)}`);
 
 
 ///////////////////////////////////////////////////////////////////////////////
